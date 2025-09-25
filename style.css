@@ -1,0 +1,218 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f6; 
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #fcd5ce; 
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #6d2e46; 
+  margin-bottom: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6d2e46;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #b23a48;
+}
+
+/* Banner principal */
+.hero {
+  background: url('flores.jpg') center/cover no-repeat;
+  color: #b23a48;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+/* Produtos */
+.produtos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #6d2e46;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  color: #b23a48;
+  font-weight: bold;
+}
+
+/* Sobre nós */
+.sobre {
+  padding: 50px 20px;
+  background-color: #fcefee;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  color: #6d2e46;
+  margin-bottom: 20px;
+}
+
+/* Contato */
+.contato {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6d2e46;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #b23a48;
+}
+
+button {
+  padding: 12px;
+  background-color: #b23a48;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #6d2e46;
+}
+
+/* Rodapé */
+footer {
+  background-color: #fcd5ce;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  color: #6d2e46;
+  font-weight: bold;
+}
+
+/* Mapa */
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.map-container iframe {
+  width: 800px;  /* largura fixa */
+  height: 400px; /* altura fixa */
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: block;
+}
+
+/* Seção Onde Estamos */
+.localizacao {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff8f6;
+}
+
+.localizacao h2 {
+  font-size: 2rem;
+  color: #6d2e46;
+  margin-bottom: 20px;
+}
+
+.localizacao p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 20px;
+}

@@ -150,6 +150,7 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
+  width: 100%;
 }
 
 input:focus, textarea:focus {
@@ -171,27 +172,18 @@ button:hover {
   background-color: #6d2e46;
 }
 
-/* Rodapé */
-footer {
-  background-color: #fcd5ce;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
-  color: #6d2e46;
-  font-weight: bold;
-}
-
 /* Mapa */
 .map-container {
   display: flex;
   justify-content: center;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .map-container iframe {
-  width: 800px;  /* largura fixa */
-  height: 400px; /* altura fixa */
+  width: 100%;
+  max-width: 800px;  /* largura máxima */
+  height: 400px; 
   border: 0;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -215,4 +207,31 @@ footer {
   font-size: 1.1rem;
   color: #444;
   margin-bottom: 20px;
+}
+
+/* Rodapé ajustado */
+footer {
+  background-color: #fcd5ce;
+  text-align: center;
+  padding: 20px;  /* aumentei o padding */
+  color: #6d2e46;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
